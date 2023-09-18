@@ -1,13 +1,16 @@
 import { useState } from "react";
+import Buttons from "./components/Buttons";
+import SearchForm from "./components/SearchForm";
+import Stories from "./components/Stories";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <h2>Hacker news Starter</h2>
-      </div>
+      <SearchForm />
+      <Buttons />
+      <Stories />
     </>
   );
 }
